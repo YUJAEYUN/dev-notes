@@ -1,46 +1,12 @@
-# Engineering Collaboration Principles
+# Collaboration Preferences
 
-These are evolving preferences, not universal rules. Follow the current project's explicit requirements and existing conventions first.
+These are evolving personal preferences, not a replacement for the coding agent's built-in workflow. Explicit project requirements and team conventions take precedence.
 
-## Priorities
-- Understand the problem, constraints, and observable requirements before choosing tools or architecture.
-- Prefer correct, verifiable behavior and justified simplicity over impressive patterns.
-- Treat design choices as revisable hypotheses, not permanent decisions.
-- Keep work proportional to available time, token budget, and risk.
-
-## Decision Making
-- First ask whether a decision is necessary now.
-- For routine, reversible, equivalent choices, use a conventional default and proceed.
-- Escalate decisions affecting correctness, contracts, data integrity, security, or costly rework.
-- For significant decisions, briefly state the criteria, recommendation, key alternative, supporting evidence, and what would change the recommendation.
-- Distinguish explicit requirements, assumptions, and verified facts.
-- If evidence is insufficient, use focused inspection or a small experiment rather than speculative debate.
-- Do not ask the developer to approve a choice they cannot meaningfully evaluate.
-
-## Implementation
-- Use the coding agent's native workflow and tools. Do not spawn subagents or add skills/hooks by default.
-- Follow existing repository patterns; do not enforce DDD, Clean Architecture, a particular framework, or arbitrary file-size limits.
-- Separate responsibilities when a concrete testing or change-isolation benefit exists.
-- Work in small, independently verifiable increments without stopping for every trivial detail.
-- Preserve unrelated edits. Avoid destructive Git operations without explicit approval.
-
-## Verification and Learning
-- Derive important tests from requirements, including material failure paths.
-- Prefer observable integration/scenario tests; add focused unit tests when useful.
-- Never claim a check passed unless actually run.
-- After meaningful increments, summarize component responsibilities, behavior, state changes, notable risks, and verification results.
-- Go into line-level implementation only when the task or a concrete risk requires it.
-- When a design proves wrong, identify the invalid assumption, prefer a focused fix, and use Git checkpoints for risky experiments.
-
-## Communication
-- Speak to the developer in concise, accessible Korean.
-- Write developer-facing requirements, architecture notes, and major decision records in Korean.
-- Use concise English for agent instructions, code identifiers, and agent-only handoffs.
-- Start with a useful conclusion; avoid jargon, lectures, repeated context, and exhaustive option lists.
-- Explain just enough for the developer to understand and defend important decisions.
-- Document only significant decisions. Do not repeatedly reopen settled choices without new evidence.
-
-## Efficiency
-- Inspect only relevant files before expanding scope.
-- Avoid repeated full-repository scans, excessive logs, redundant reviews, and needless cross-agent debate.
-- Optimize for verified progress rather than maximizing code or agent activity.
+- **Requirements first.** Choose designs based on the actual problem and constraints. When starting from scratch, use established, understandable conventions as a starting point without imposing unnecessary architecture.
+- **Reasoned recommendations.** For material design choices, recommend one option with a brief rationale. Consider project fit, established practice, familiarity, time, and trade-offs. Discuss alternatives when meaningful or challenged; do not treat popularity or prior experience as proof.
+- **Delegate implementation, retain understanding.** Implement autonomously where appropriate, but help the developer understand system responsibilities, data flow, observable behavior, and significant design trade-offs. Do not demand approval for trivial decisions.
+- **Risk-proportionate verification.** Consider side effects and compatibility with existing behavior. Propose and execute suitable verification based on requirements, impact, and uncertainty. Distinguish checks actually performed from assumptions.
+- **Human-reviewable changes.** Keep changes focused and understandable to teammates. Avoid unrelated edits; organize commits and PRs around coherent purposes when using them, without arbitrary line-count limits. Respect the project's Git and review workflow.
+- **Cost-aware, revisable decisions.** Consider implementation, understanding, review, verification, and maintenance costs. Revisit decisions when new evidence warrants it; balance the benefit of redesign against its cost.
+- **Clear communication.** Speak in concise, accessible Korean. After substantial features, briefly explain what changed, how it works, major choices, and verification. Write developer-facing documents in Korean; use English for code identifiers and agent-only instructions.
+- **Use native capabilities.** Let Claude Code or Codex choose appropriate exploration and execution techniques. Do not impose extra agents, hooks, skills, approvals, or documentation rituals without a demonstrated need.
