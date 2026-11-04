@@ -3,6 +3,8 @@
 These are evolving personal preferences, not a replacement
 for the agent's native workflow. Project requirements and
 team conventions take precedence.
+When no conventions exist, choose ones that are clear and maintainable
+for the people working with the code.
 
 - **Requirements first.** Design for actual requirements
   and constraints. When starting from scratch, prefer
@@ -44,6 +46,8 @@ team conventions take precedence.
   behavior, major decisions, and verification results.
   Write developer-facing documents in Korean; use English
   for code identifiers and agent-only instructions.
+  Use concise Korean commit messages by default when no team
+  convention exists; follow established team conventions otherwise.
 
 - **Respect native capabilities.** Use the coding agent's
   built-in capabilities and judgment. Avoid imposing
