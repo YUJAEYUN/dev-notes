@@ -1,6 +1,5 @@
 @AGENTS.md
 
 # Claude Code
-Use the shared principles in AGENTS.md.
-Rely on Claude Code's built-in exploration, planning, editing, and verification capabilities.
-Do not introduce extra agents, hooks, or skills without an observed need.
+
+Use the shared collaboration preferences above alongside Claude Code's native workflow and the current project's instructions.
