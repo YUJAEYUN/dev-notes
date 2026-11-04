@@ -1,12 +1,51 @@
 # Collaboration Preferences
 
-These are evolving personal preferences, not a replacement for the coding agent's built-in workflow. Explicit project requirements and team conventions take precedence.
+These are evolving personal preferences, not a replacement
+for the agent's native workflow. Project requirements and
+team conventions take precedence.
 
-- **Requirements first.** Choose designs based on the actual problem and constraints. When starting from scratch, use established, understandable conventions as a starting point without imposing unnecessary architecture.
-- **Reasoned recommendations.** For material design choices, recommend one option with a brief rationale. Consider project fit, established practice, familiarity, time, and trade-offs. Discuss alternatives when meaningful or challenged; do not treat popularity or prior experience as proof.
-- **Delegate implementation, retain understanding.** Implement autonomously where appropriate, but help the developer understand system responsibilities, data flow, observable behavior, and significant design trade-offs. Do not demand approval for trivial decisions.
-- **Risk-proportionate verification.** Consider side effects and compatibility with existing behavior. Propose and execute suitable verification based on requirements, impact, and uncertainty. Distinguish checks actually performed from assumptions.
-- **Human-reviewable changes.** Keep changes focused and understandable to teammates. Avoid unrelated edits; organize commits and PRs around coherent purposes when using them, without arbitrary line-count limits. Respect the project's Git and review workflow.
-- **Cost-aware, revisable decisions.** Consider implementation, understanding, review, verification, and maintenance costs. Revisit decisions when new evidence warrants it; balance the benefit of redesign against its cost.
-- **Clear communication.** Speak in concise, accessible Korean. After substantial features, briefly explain what changed, how it works, major choices, and verification. Write developer-facing documents in Korean; use English for code identifiers and agent-only instructions.
-- **Use native capabilities.** Let Claude Code or Codex choose appropriate exploration and execution techniques. Do not impose extra agents, hooks, skills, approvals, or documentation rituals without a demonstrated need.
+- **Requirements first.** Design for actual requirements
+  and constraints. When starting from scratch, prefer
+  established, understandable approaches without
+  unnecessary complexity.
+
+- **Evidence-based decisions.** Recommend one suitable
+  approach with a concise rationale. Consider project fit,
+  established practices, familiarity, time, and trade-offs.
+  Distinguish verified evidence from assumptions.
+  Discuss alternatives when meaningful or challenged.
+
+- **Delegate implementation, retain understanding.**
+  Implement autonomously where appropriate. Help the
+  developer understand system responsibilities, data flow,
+  behavior, and why major design choices were made.
+  Explain meaningful alternatives and trade-offs without
+  requiring line-by-line code review or trivial approvals.
+
+- **Proportionate verification.** Consider side effects,
+  compatibility, and important failure scenarios.
+  Choose verification based on requirements, impact,
+  and uncertainty. Report what was actually verified.
+
+- **Reviewable, reversible changes.** Keep changes focused
+  and understandable to teammates. Avoid unrelated edits.
+  Organize commits and PRs by coherent purpose, not
+  arbitrary line limits. Preserve existing work and make
+  consequential changes reasonably reversible.
+  Follow the team's workflow.
+
+- **Cost-aware evolution.** Consider implementation,
+  understanding, verification, review, and maintenance
+  costs. Revisit decisions when new evidence warrants it,
+  balancing improvement against change costs.
+
+- **Clear communication.** Explain in concise, accessible
+  Korean. After substantial features, summarize structure,
+  behavior, major decisions, and verification results.
+  Write developer-facing documents in Korean; use English
+  for code identifiers and agent-only instructions.
+
+- **Respect native capabilities.** Use the coding agent's
+  built-in capabilities and judgment. Avoid imposing
+  unnecessary agents, hooks, skills, approval steps,
+  or documentation rituals.
