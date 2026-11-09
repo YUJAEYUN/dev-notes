@@ -30,8 +30,12 @@ AI와 함께 소프트웨어를 개발할 때 사용하는 개인적인 판단 �
 | --- | --- |
 | [AGENTS.md](./AGENTS.md) | AI 코딩 에이전트와 협업할 때의 최소 지침 |
 | [CLAUDE.md](./CLAUDE.md) | Claude Code에서 공통 지침 참조 |
+| [BACKEND.md](./BACKEND.md) | 백엔드 코드를 작성하고 리뷰할 때의 판단 기준 |
+| [WRITING.md](./WRITING.md) | README, 결정 기록, 커밋, PR을 쓸 때의 기준 |
 | [templates/HANDOFF.md](./templates/HANDOFF.md) | 필요한 경우 사용하는 작업 인수인계 템플릿 |
 | [templates/DECISION.md](./templates/DECISION.md) | 중요한 선택의 근거를 남기는 선택적 템플릿 |
+
+프런트엔드는 토스 [Frontend Fundamentals](https://github.com/toss/frontend-fundamentals)를 기준으로 하고, 리뷰에는 공식 Claude Code 플러그인을 프런트엔드 프로젝트에서만 켜서 사용합니다.
 
 ## 사용 방식
 
